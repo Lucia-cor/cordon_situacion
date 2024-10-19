@@ -1,0 +1,48 @@
+.holder{
+    max-width: 1000px;
+    margin: 0 auto;
+}  
+.introduccion h2{
+    font-size: 35px;
+    color: rgb(236, 202, 158);
+    text-align: center;
+}
+.introduccion p{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.atracciones{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.atraccion{
+    border: 2px black solid;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    height: 450px;
+    width: 300px;
+    padding: 5px; 
+    background-color: rgb(171, 161, 141);
+    box-shadow: 5px 5px 10px rgb(209, 201, 201);  
+}
+.atraccion img{
+    padding-left: 20%;
+}
+.atraccion h3{
+    text-align: center;
+    color: rgb(84, 81, 81);
+    font-weight: 400;
+    font-style: oblique;
+    text-decoration: underline;
+}
+.atraccion p{
+    text-align: center;
+}
+.atraccion:hover{
+    box-shadow: 3px 4px 5px rgb(154, 149, 138);
+    background-color: rgba(195, 185, 171, 0.867);
+    transform: scale(1.05);
+    transition: all o.3s ease-in-out;
+}

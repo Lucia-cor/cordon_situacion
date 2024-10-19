@@ -1,0 +1,56 @@
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.introduccion h2{
+    font-size: 35px;
+    color: rgb(236, 202, 158);
+    text-align: center;
+}
+.introduccion p{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}  
+
+.servicios{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.servicio{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    height: 350px;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgb(209, 201, 201);
+    background-color: rgb(171, 161, 141);  
+}
+.servicio:hover{
+    box-shadow: 3px 4px 5px rgb(154, 149, 138);
+    background-color: rgba(195, 185, 171, 0.867);
+    font-size: 20px;
+    transform: scale(1.05);
+    transition: all o.3s ease-in-out;
+}
+.servicio .info h4{
+    color: rgb(84, 81, 81);
+    font-weight: 400;
+    font-style: oblique;
+    text-decoration: underline;
+    text-align: center;
+
+}
+.servicio .info p{
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+}
+.servicio img{
+    opacity: 80%;
+    padding-left: 12%;
+
+}

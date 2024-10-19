@@ -1,0 +1,19 @@
+footer{
+    background-color:rgb(194, 181, 146);
+    clear: both;
+    padding: 5px;
+    margin-top: 0;
+    border-top: 5px rgb(212, 205, 205) solid;
+
+}
+footer .columna{
+    display: flex;
+    justify-content: space-around;
+}
+footer .columna ul{
+    list-style: none;
+    font-size: 17px;   
+}
+footer .columna .informacion{
+    line-height: 40px;
+}

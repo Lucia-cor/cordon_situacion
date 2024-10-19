@@ -1,0 +1,32 @@
+.holder{
+    max-width: 950px;
+    margin: 0 auto;
+}
+#contcarrusel{
+    height: 700px;
+    overflow-y: hidden;
+}
+.carrusel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.carrusel img{
+    height: 700px;
+}
+
+.flechas{
+    position: absolute;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65%;
+}
+.carrusel .flechas a{
+    color: bisque;
+}
+.carrusel .flechas i:hover{
+    transform: scale(1.5);
+    color: rgb(123, 121, 117);
+}

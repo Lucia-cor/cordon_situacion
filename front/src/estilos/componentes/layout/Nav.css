@@ -1,0 +1,25 @@
+nav {
+    background-color: rgb(199, 179, 126);
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 100px;
+    padding-top: 8px;
+}
+nav ul li {
+    flex-grow: 1;
+}
+nav ul li a {
+    color: rgb(84, 81, 81);
+}
+nav ul li a:hover{
+    color: beige;
+}
+nav ul li a.activo {
+    color: rgb(104, 72, 13);
+}
