@@ -37,5 +37,9 @@ footer{
   margin-top: 0;
   border-top: 5px rgb(212, 205, 205) solid;
   text-align: center;
+  
 
+}
+footer .columna .informacion {
+  list-style: none;
 }
