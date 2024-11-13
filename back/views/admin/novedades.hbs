@@ -5,7 +5,7 @@
     </div>
     <div class="row">
         <div class="col-7">
-            <h3>Listado de Actividades Culturales y/o Turìsticas</h3>
+            <h3>Listado de Actividades Culturales y/o Turísticas</h3>
         </div>
         <div class="col-5 text-end">
             <a class="btn btn-outline-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hidden="true"></i>Nuevo</a>
@@ -28,9 +28,9 @@
                         <th scope="row">{{id}}</th>
                         <td>{{Titulo}}</td>
                         <td>{{Lugar}}</td>
-                        <td class="text-end"> <a class="btn btn-info" href=""> <i class="fa fa-pencil"
-                                    aria-hidden="true"></i></a> <a class="btn btn-info" href=""> <i class="fa fa-trash"
-                                    aria-hidden="true"></i></a>
+                        <td class="text-end"> <a class="btn btn-info" href="admin/novedades/modificar/{{id}}"> <i class="fa fa-pencil"
+                                    aria-hidden="true"></i></a> <a class="btn btn-info" href="/admin/novedades/eliminar/{{id}}"> <i class="fa fa-trash"
+                                    aria-hidden="true"></i></a> 
                         </td>
                     </tr>
                     {{/each}}
