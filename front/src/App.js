@@ -9,6 +9,7 @@ import AtraccionesPage from './pages/AtraccionesPage';
 import GaleriaPage from './pages/GaleriaPage';
 import NosotrosPage from './pages/NosotrosPage';
 import ServiciosPage from './pages/ServiciosPage';
+import NovedadesPage from './pages/NovedadesPage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/galeria' element={<GaleriaPage/>} />
         <Route path='/servicios' element={<ServiciosPage/>} />
         <Route path='/atracciones' element={<AtraccionesPage/>} />
+        <Route path='/novedades' element={<NovedadesPage/>} />
       </Routes>
 
       </BrowserRouter>
