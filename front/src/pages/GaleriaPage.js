@@ -3,9 +3,9 @@ import './../estilos/componentes/pages/GaleriaPage.css';
 
 const GaleriaPage = (props) => {
     return (
-        <main className="holder">
+        <main>
             <div id="contcarrusel">
-                <div class="carrusel" id="carrusel-1">
+                <div className="carrusel" id="carrusel-1">
                     <div className="imagen">
                         <img src="IMG/Galeria/Fuera/Cabaña vista ppal.jpg" alt="vista" id="vista-1"/>
                     </div>

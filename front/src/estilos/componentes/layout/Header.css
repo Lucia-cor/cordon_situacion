@@ -1,5 +1,7 @@
 header {
-    background-color: rgb(231, 231, 208);
+    background-color: rgb(231, 231, 208); 
+}
+.header{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;

@@ -51,8 +51,7 @@ const AtraccionesPage = (props) => {
                     <img src="IMG/Atracciones/casadete.jpg" alt="casa-de-te"/>
                         <h3>Casa de Té Galés Neim Magui</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti et quibusdam quia non distinctio
-                            numquam, sed totam dicta amet? Aspernatur esse dignissimos odit distinctio ea maxime. Dignissimos
-                            voluptatibus nostrum reprehenderit!</p>
+                            numquam, sed totam dicta amet? Aspernatur esse dignissimos odit distinctio ea maxime. </p>
                         <p>Para mas información <a href="https://trevelin.tur.ar/servicios/nain-maggie/">aquí</a></p>
                 </div>
                 <div className="atraccion">

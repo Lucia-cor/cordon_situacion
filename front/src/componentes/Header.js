@@ -4,7 +4,7 @@ import './../estilos/componentes/layout/Header.css';
 const Header = (props) => {
     return (
         <header>
-            <div>
+            <div className="header">
                 <img src="IMG\Logo.png" width="200" alt="Logo"></img>
                 <h1>Cabaña Cordón Situación</h1>
             </div>

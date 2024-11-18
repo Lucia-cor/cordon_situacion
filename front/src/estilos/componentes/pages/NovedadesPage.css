@@ -2,6 +2,11 @@
     max-width: 960px;
     margin: 0 auto;
 }
+.actividades{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .introduccion h2{
     font-size: 35px;
@@ -14,11 +19,7 @@
     font-style: italic;
 }  
 
-.actividades{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+
 .actividad{
     border: 2px black solid;
     border-radius: 10px;
@@ -38,7 +39,7 @@
     text-align: center;
 
 }
-.actividad .info .h3{
+.actividad .info h4{
     color: rgb(84, 81, 81);
     text-align: center;
 }

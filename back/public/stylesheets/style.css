@@ -1,7 +1,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
- background-color: rgb(190, 178, 155);
+ background-color: rgb(220, 211, 194);
  }
 header {
   background-color: rgb(231, 231, 208);
@@ -31,10 +31,10 @@ h3{
 }
 
 footer{
-  background-color:rgb(194, 181, 146);
+  background-color:rgb(201, 191, 163);
   clear: both;
-  padding: 5px;
-  margin-top: 0;
+  padding: 10px;
+  margin-top: 90px;
   border-top: 5px rgb(212, 205, 205) solid;
   text-align: center;
   
@@ -42,4 +42,5 @@ footer{
 }
 footer .columna .informacion {
   list-style: none;
+  
 }
