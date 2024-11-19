@@ -12,7 +12,7 @@ router.get('/', async function(req, res, next) {
 
   novedades = novedades.map(novedad => {
     if (novedad.img_id) {
-      const imagen = cloudinary.imagen(novedad.img_id, {
+      const imagen = cloudinary.image(novedad.img_id, {
         widht: 100,
         height: 100,
         crop: 'fill'
@@ -97,7 +97,7 @@ router.post('/modificar', async (req, res, next) => {
     }
     await novedadesModel.modificarNovedadById(obj, req.body.id);
     res.redirect ('/admin/novedades');
-  } catch (error){
+  } catch (error) {
     console.log(error)
     res.render ('admin/modificar', {
       layout: 'admin/layout',
