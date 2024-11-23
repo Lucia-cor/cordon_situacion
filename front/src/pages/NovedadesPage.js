@@ -1,66 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
 import './../estilos/componentes/pages/NovedadesPage.css';
 
 const NovedadesPage = (props) => {
+
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    }, []);
+
     return (
-        <main className="holder">
-            <div className="introduccion">
-                <h2>Actividades Culturales</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                    dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                    provident ad!</p>
-            </div>
-            <div className="actividades">
-                <div className="actividad">
-                    <div className="info">
-                        <h3>Actividad 1</h3>
-                        <h4>Lugar</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                            dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                            provident ad!</p>
-                    </div>
-                </div>
-                <div className="actividad">
-                    <div className="info">
-                        <h3>Actividad 1</h3>
-                        <h4>Lugar</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                            dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                            provident ad!</p>
-                    </div>
-                </div>
-                <div className="actividad">
-                    <div className="info">
-                        <h3>Actividad 1</h3>
-                        <h4>Lugar</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                            dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                            provident ad!</p>
-                    </div>
-                </div>
-                <div className="actividad">
-                    <div className="info">
-                        <h3>Actividad 1</h3>
-                        <h4>Lugar</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                            dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                            provident ad!</p>
-                    </div>
-                </div>
-                <div className="actividad">
-                    <div className="info">
-                        <h3>Actividad 1</h3>
-                        <h4>Lugar</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                            dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                            provident ad!</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </main>
+        <section className="holder">
+            <h2>Activiades Culturales</h2>
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id} titulo={item.titulo} lugar={item.lugar} imagen={item.imagen} cuerpo={item.cuerpo} />)
+            )}
+        </section>
     );
+
 }
 
 export default NovedadesPage;

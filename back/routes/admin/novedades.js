@@ -79,8 +79,8 @@ router.get('/eliminar/:id', async (req, res, next) => {
 });
 
 router.get ('/modificar/:id', async (req, res, next) => {
-  let id = re.params.id;
-  let novedad =await novedadesModel.getNovedadById(id);
+  let id = req.params.id;
+  let novedad = await novedadesModel.getNovedadById(id);
   res.render ('admin/modificar', {
     layout: 'admin/layout',
     novedad
@@ -88,7 +88,7 @@ router.get ('/modificar/:id', async (req, res, next) => {
 });
 
 router.post('/modificar', async (req, res, next) => {
-  try{
+  try {
     let obj = {
       titulo: req.body.titulo,
       lugar: req.body.lugar,
