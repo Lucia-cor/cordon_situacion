@@ -5,7 +5,7 @@ const ServiciosPage = (props) => {
     return (
         <main className="holder">
             <div className="introduccion">
-                <h2>Servicios</h2>
+                <h2 className="titulo">Servicios</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
                     dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
                     provident ad!</p>

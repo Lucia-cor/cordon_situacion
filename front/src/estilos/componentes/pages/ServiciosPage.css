@@ -3,9 +3,9 @@
     margin: 0 auto;
 }
 
-.introduccion h2{
+.introduccion .titulo{
     font-size: 35px;
-    color: rgb(236, 202, 158);
+    color: rgb(84, 81, 81);
     text-align: center;
 }
 .introduccion p{
