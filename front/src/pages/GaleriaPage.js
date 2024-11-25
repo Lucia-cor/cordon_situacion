@@ -3,76 +3,41 @@ import './../estilos/componentes/pages/GaleriaPage.css';
 
 const GaleriaPage = (props) => {
     return (
-        <main>
-            <div id="contcarrusel">
-                <div className="carrusel" id="carrusel-1">
-                    <div className="imagen">
-                        <img src="IMG/Galeria/Fuera/Cabaña vista ppal.jpg" alt="vista" id="vista-1"/>
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-7"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-2"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+        <main className="galeria">
+            <div className="introduccion">
+                <h2>GALERIA DE FOTOS</h2>
+                <p>Descubre algunas de las vistas más hermosas y nuestros espacios.</p>
+            </div>
+            <div className="galeria-grid">
+                <div className="foto">
+                    <img src="IMG/Galeria/Fuera/Cabaña vista ppal.jpg" alt="Vista principal de la cabaña" />
                 </div>
-                <div className="carrusel" id="carrusel-2">
-                    <div class="imagen">
-                        <img src="IMG/Galeria/Fuera/Cabaña vista arriba.jpg" alt="vista-arriba" id="vista-2"/>
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-1"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-3"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                <div className="foto">
+                    <img src="IMG/Galeria/Fuera/Cabaña vista arriba.jpg" alt="Vista desde arriba de la cabaña" />
                 </div>
-                <div className="carrusel" id="carrusel-3">
-                    <div className="imagen">
-                        <img src="IMG/Galeria/Fuera/Cabaña vista arriba 2.jpg" alt="vista-arriba2" id="vista-3"
-                        />
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-2"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-4"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                <div className="foto">
+                    <img src="IMG/Galeria/Fuera/Cabaña vista arriba 2.jpg" alt="Vista desde abajo de la cabaña" />
                 </div>
-                <div className="carrusel" id="carrusel-4">
-                    <div className="imagen">
-                        <img src="IMG/Galeria/Habitacion Doble/Habitacion Doble.JPG" alt="habdoble" id="habitacion-1"/>
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-3"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-5"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Habitacion Doble\Haabitacion Doble 3.JPG" alt="Habitación doble 1" />
                 </div>
-                <div className="carrusel" id="carrusel-5">
-                    <div class="imagen">
-                        <img src="IMG/Galeria/Habitacion Doble/Habitacion Doble 2.JPG" alt="habdoble2" id="habitacion-2"/>
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-4"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-6"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Habitacion Doble\Habitacion Doble 2.JPG" alt="Habitación doble 2" />
                 </div>
-                <div className="carrusel" id="carrusel-6">
-                    <div className="imagen">
-                        <img src="IMG/Galeria/Habitación Individual/Habitacion Individual.JPG" alt="habdoble2"
-                            id="habitacion-i-1"/>
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-5"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-7"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Habitacion Doble\Habitacion Doble.JPG" alt="Habitación doble 3" />
                 </div>
-                <div className="carrusel" id="carrusel-7">
-                    <div className="imagen">
-                        <img src="IMG/Galeria/Habitación Individual/Habitacion Individual 2.JPG" alt="habdoble2"
-                            id="habitacion-i-2"/>
-                    </div>
-                    <div className="flechas">
-                        <a href="#carrusel-6"><i class="fa-solid fa-arrow-left"></i></a>
-                        <a href="#carrusel-1"><i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Habitación Individual\Habitacion Individual 2.JPG" alt="Habitación individual 1" />
+                </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Habitación Individual\Habitacion Individual.JPG" alt="Habitación individual 2" />
                 </div>
 
+               
             </div>
+
+
 
         </main>
     );

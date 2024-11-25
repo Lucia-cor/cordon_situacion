@@ -1,56 +1,76 @@
-.holder{
-    max-width: 960px;
+.holder {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 10px auto; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+}
+.introduccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titulo {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.introduccion p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
     margin: 0 auto;
 }
-
-.introduccion .titulo{
-    font-size: 35px;
-    color: rgb(84, 81, 81);
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 30px;
+}
+.servicio {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out;
+}
+.servicio:hover {
+    transform: translateY(-10px); 
+}
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #b48b3e; 
+    object-fit: cover; 
+}
+.info {
+    padding: 15px;
     text-align: center;
 }
-.introduccion p{
-    font-size: 20px;
-    text-align: center;
-    font-style: italic;
-}  
+.info h4 {
+    font-size: 1.5rem;
+    color: #a5bdd5; 
+    margin-bottom: 10px;
+}
+.info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
 
-.servicios{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.servicio{
-    border: 2px black solid;
-    border-radius: 10px;
-    padding: 10px;
-    height: 350px;
-    width: 300px;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 10px rgb(209, 201, 201);
-    background-color: rgb(171, 161, 141);  
-}
-.servicio:hover{
-    box-shadow: 3px 4px 5px rgb(154, 149, 138);
-    background-color: rgba(195, 185, 171, 0.867);
-    font-size: 20px;
-    transform: scale(1.05);
-    transition: all o.3s ease-in-out;
-}
-.servicio .info h4{
-    color: rgb(84, 81, 81);
-    font-weight: 400;
-    font-style: oblique;
-    text-decoration: underline;
-    text-align: center;
+@media (max-width: 768px) {
+    .holder {
+        padding: 10px;
+    }
 
-}
-.servicio .info p{
-    font-size: 17px;
-    font-style: italic;
-    text-align: center;
-}
-.servicio img{
-    opacity: 80%;
-    padding-left: 12%;
+    .introduccion p {
+        font-size: 1rem;
+    }
 
+    .servicios {
+        grid-template-columns: 1fr; 
+    }
 }
+

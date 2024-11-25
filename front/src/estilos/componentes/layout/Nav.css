@@ -1,25 +1,29 @@
 nav {
-    background-color: rgb(199, 179, 126);
-    height: 30px;
-    font-size: 15px;
-    text-transform: uppercase;
+    background-color: #333; /* Fondo oscuro para el nav */
+    padding: 10px 0;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 nav ul {
     list-style: none;
-    display: flex;
     margin: 0;
-    padding-left: 100px;
-    padding-top: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 nav ul li {
-    flex-grow: 1;
+    font-size: 1.1rem;
 }
 nav ul li a {
-    color: rgb(84, 81, 81);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
-nav ul li a:hover{
-    color: beige;
+nav ul li a:hover {
+    background-color: #a8b17f; 
 }
 nav ul li a.activo {
-    color: rgb(104, 72, 13);
+    background-color: #c4c498; 
 }

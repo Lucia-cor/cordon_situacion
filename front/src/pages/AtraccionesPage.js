@@ -3,9 +3,9 @@ import './../estilos/componentes/pages/AtraccionesPage.css';
 
 const AtraccionesPage = (props) => {
     return (
-        <main className="holder">
-            <div className="introduccion">
-                <h2>Atracciones</h2>
+        <main className="principal">
+            <div className="presentacion">
+                <h2>ATRACCIONES</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem possimus dignissimos tempora natus,
                     blanditiis ullam perspiciatis ut nulla vitae neque maiores enim mollitia quidem quas, alias officia
                     nemo, dolorum corrupti!</p>
@@ -56,7 +56,7 @@ const AtraccionesPage = (props) => {
                 </div>
                 <div className="atraccion">
                     <img src="IMG/Atracciones/trochita.jpeg" alt="trochita"/>
-                        <h3>Casa de Té Galés Neim Magui</h3>
+                        <h3>La trochita</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti et quibusdam quia non distinctio
                             numquam, sed totam dicta amet? Aspernatur esse dignissimos odit distinctio ea maxime. Dignissimos
                             voluptatibus nostrum reprehenderit!</p>

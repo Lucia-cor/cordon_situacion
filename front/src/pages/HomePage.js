@@ -3,20 +3,19 @@ import './../estilos/componentes/pages/HomePage.css';
 
 const HomePage = (props) => {
     return (
-        <main>
-            <div className="imagen">
-                <img src="IMG/Home/Vista primavera.jpg" width="100%" alt="primavera" />
-            </div>
-            <div className="columnas">
-                <section className="presentacion">
-                    <h2>Descansa en la natraleza</h2>
-                    <p>A tan solo un kilometro de Trevelin, Cabañas Cordon Situación te esperan para ofrecerte un descanso
-                        absoluto lejos del ruido de la ciudad.</p>
-                    <p>Trekking, ski, viñedos y el parque nacional Los alerces son
-                        algunas de las atracciones que encontrarás y difrutarás durante tu estadia.</p>
-                </section>
-            </div>
+        <main className="home">
+            <div className="cont">
 
+                <div className="imagen-col">
+                    <img src="IMG\Home\Cabaña roja.jpg" alt="Home" />
+                </div>
+                <div className="texto-col">
+                    <h2>BIENVENIDOS</h2>
+                    <p>En el corazón de la Patagonia, nuestras cabañas fueron construidas con el amor y el respeto por la naturaleza que nos rodea. A tan solo un kilómetro de Trevelin, ofrecemos un refugio de paz y tranquilidad, ideal para quienes buscan escapar del bullicio de la ciudad.</p>
+                    <p>Desde su inauguración, nos hemos comprometido a brindar experiencias únicas que conecten a nuestros huéspedes con la belleza natural de la región. Con una arquitectura inspirada en el entorno, cada rincón de nuestras cabañas ha sido pensado para ofrecer confort, privacidad y vistas espectaculares.</p>
+                    <p>Ya sea que busques descansar, explorar el Parque Nacional Los Alerces, o disfrutar de actividades al aire libre como el trekking y el ski, nuestra misión es ofrecerte un lugar donde el descanso y la aventura se encuentren.</p>
+                </div>
+            </div>
         </main>
 
     );

@@ -1,15 +1,10 @@
 import React from "react";
+import './../../estilos/componentes/layout/NovedadItem.css'
 
 const NovedadItem = (props) => {
     const { titulo, lugar, cuerpo, imagen } = props;
     return (
-        <main className="holder">
-            <div className="introduccion">
-                <h2>Actividades Culturales</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, porro facilis cumque maiores quasi,
-                    dolores aliquam quo ullam rem blanditiis error eius perspiciatis voluptatibus id harum nesciunt quidem
-                    provident ad!</p>
-            </div>
+        <main className="contenedor">
             <div className="novedades">
                 <div className="actividad">
                     <div className="info">
@@ -17,11 +12,10 @@ const NovedadItem = (props) => {
                         <h4>{lugar}</h4>
                         <img src={imagen} />
                         <p dangerouslySetInnerHTML={{__html: cuerpo}}></p>
-                        <hr />
                     </div>
                 </div>
             </div>
-        </main>
+        </main >
 
     );
 }
