@@ -10,7 +10,7 @@ const Footer = (props) => {
                 <li>Callejon peñas 539</li>
                 <li>.............</li>
             </ul>
-            <ul className="contacto">
+            <ul className="infocontacto">
                 <li>
                     <p><i className="fa-solid fa-phone"></i> 2945533253</p>
                 </li>

@@ -11,9 +11,10 @@ const HomePage = (props) => {
                 </div>
                 <div className="texto-col">
                     <h2>BIENVENIDOS</h2>
-                    <p>En el corazón de la Patagonia, nuestras cabañas fueron construidas con el amor y el respeto por la naturaleza que nos rodea. A tan solo un kilómetro de Trevelin, ofrecemos un refugio de paz y tranquilidad, ideal para quienes buscan escapar del bullicio de la ciudad.</p>
-                    <p>Desde su inauguración, nos hemos comprometido a brindar experiencias únicas que conecten a nuestros huéspedes con la belleza natural de la región. Con una arquitectura inspirada en el entorno, cada rincón de nuestras cabañas ha sido pensado para ofrecer confort, privacidad y vistas espectaculares.</p>
-                    <p>Ya sea que busques descansar, explorar el Parque Nacional Los Alerces, o disfrutar de actividades al aire libre como el trekking y el ski, nuestra misión es ofrecerte un lugar donde el descanso y la aventura se encuentren.</p>
+                    <p>Nos complace ofrecerte un lugar único para desconectar, relajarte y disfrutar de la naturaleza en su máximo esplendor. Nuestras cabañas, ubicadas en el corazón de la Patagonia, son el espacio ideal para quienes buscan una experiencia auténtica y en armonía con el entorno natural. 
+                        Rodeadas de paisajes impresionantes, montañas, bosques y lagos cristalinos, te invitamos a vivir una experiencia inolvidable en este rincón del mundo.</p>
+                    <p>Ya sea que busques una escapada tranquila para descansar, una aventura al aire libre o un lugar especial para compartir con tus seres queridos, nuestras cabañas están equipadas para brindarte todo lo necesario para que tu estancia sea cómoda, relajante y memorable.</p>
+                    <p>¡Esperamos que disfrutes de tu tiempo en la Patagonia tanto como nosotros disfrutamos compartirla contigo!</p>
                 </div>
             </div>
         </main>
