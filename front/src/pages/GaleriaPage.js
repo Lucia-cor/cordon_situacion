@@ -19,6 +19,18 @@ const GaleriaPage = (props) => {
                     <img src="IMG/Galeria/Fuera/Cabaña vista arriba 2.jpg" alt="Vista desde abajo de la cabaña" />
                 </div>
                 <div className="foto">
+                    <img src="IMG\Galeria\Fuera\Cabaña 1.jpeg" alt="Cabaña 1" />
+                </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Fuera\Cabaña 2.jpeg" alt="Cabaña 2" />
+                </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Fuera\Cabaña 4.jpeg" alt="Cabaña 4" />
+                </div>
+                <div className="foto">
+                    <img src="IMG\Galeria\Fuera\Cabaña 5.jpeg" alt="Cabaña 5" />
+                </div>
+                <div className="foto">
                     <img src="IMG\Galeria\Habitacion Doble\Haabitacion Doble 3.JPG" alt="Habitación doble 1" />
                 </div>
                 <div className="foto">
